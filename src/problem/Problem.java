@@ -1,8 +1,9 @@
 package problem;
 
 import fitness.IFitness;
+import individual.Individual;
 
-public class Problem {
+public abstract class Problem {
 
     private String PROBLEM_NAME;
     private String PROBLEM_TYPE;
@@ -19,6 +20,8 @@ public class Problem {
         this.PROBLEM_TYPE = PROBLEM_TYPE;
         this.PROBLEM_COMMENT = PROBLEM_COMMENT;
     }
+
+    public abstract Individual getIndividual();
 
     public String getPROBLEM_NAME() {
         return PROBLEM_NAME;
