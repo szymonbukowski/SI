@@ -4,7 +4,6 @@ import individual.Genome;
 import individual.Individual;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 

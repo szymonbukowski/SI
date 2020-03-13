@@ -2,7 +2,7 @@ package fitness;
 
 import individual.Individual;
 
-public interface IFitness {
+public interface IFitness<T> {
 
-    double countFitness(Individual individual);
+    double countFitness(Individual<T> individual);
 }
