@@ -3,13 +3,13 @@ package problem;
 import fitness.IFitness;
 import individual.Individual;
 
-public abstract class Problem {
+public abstract class Problem<T> {
 
     private String PROBLEM_NAME;
     private String PROBLEM_TYPE;
     private String PROBLEM_COMMENT;
 
-    private IFitness fitnessCounter;
+    private IFitness<T> fitnessCounter;
 
     public Problem(){
 
@@ -21,7 +21,7 @@ public abstract class Problem {
         this.PROBLEM_COMMENT = PROBLEM_COMMENT;
     }
 
-    public abstract Individual getIndividual();
+    public abstract Individual<T> getIndividual();
 
     public String getPROBLEM_NAME() {
         return PROBLEM_NAME;
@@ -47,7 +47,7 @@ public abstract class Problem {
         this.PROBLEM_COMMENT = PROBLEM_COMMENT;
     }
 
-    public IFitness getFitnessCounter() {
+    public IFitness<T> getFitnessCounter() {
         return fitnessCounter;
     }
 
