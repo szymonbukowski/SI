@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithm/TSAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loader/Euclides2dDistanceMeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loader/IDistanceMeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loader/RadialDistanceMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ali535.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/ali535.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fl417.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/fl417.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gr666.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/gr666.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/ICrossover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/IFitness.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/IMutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/ISelection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Individual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Problem/Problem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fitness/IFitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fitness/IFitness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fitness/TravelFitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fitness/TravelFitness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/selection/ISelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/selection/ISelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/individual/Genome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/individual/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/individual/Individual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loader/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem/TSPProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/TSProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +98,7 @@
       <workItem from="1584101276625" duration="4642000" />
       <workItem from="1584119483132" duration="658000" />
       <workItem from="1584120159749" duration="5176000" />
-      <workItem from="1584175602488" duration="32853000" />
+      <workItem from="1584175602488" duration="33186000" />
     </task>
     <task id="LOCAL-00001" summary="Fittnes count corrections">
       <created>1584118322727</created>
@@ -120,7 +107,28 @@
       <option name="project" value="LOCAL" />
       <updated>1584118322727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="data corrections to fit pattern for Loader">
+      <created>1584279464091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584279464091</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Loader improvements and distancemeters">
+      <created>1584279551830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584279551830</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tsp problem added">
+      <created>1584279649157</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584279649157</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +136,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fittnes count corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fittnes count corrections" />
+    <MESSAGE value="data corrections to fit pattern for Loader" />
+    <MESSAGE value="Loader improvements and distancemeters" />
+    <MESSAGE value="Tsp problem added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tsp problem added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584273974518">
@@ -143,10 +154,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584176014388" />
-    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584279463882">
+    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584279649088">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279463882" />
+    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279649088" />
     <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583410568258">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
