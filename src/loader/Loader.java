@@ -1,5 +1,10 @@
 package loader;
 
+import fitness.IFitness;
+import fitness.TravelFitness;
+import problem.Problem;
+import problem.TSProblem;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -69,22 +74,18 @@ public class Loader {
                         Double.parseDouble(nodeInfo[2]));
     }
 
-    public double[][] createDistanceMatrix() {
+    private double[][] createDistanceMatrix(IDistanceMeter distanceMeter) {
         double[][] matrix = new double[DIMENSION][DIMENSION];
         for (int i = 0; i < DIMENSION; i++){
             for (int j = 0; j < DIMENSION; j++) {
                 if (i == j)
                     matrix[i][j] = 0.0;
                 else
-                    matrix[i][j] = getDistance(nodes.get(i), nodes.get(j));
+                    matrix[i][j] = distanceMeter.getDistance(nodes.get(i), nodes.get(j));
             }
         }
 
         return matrix;
-    }
-
-    private double getDistance(Node node1, Node node2) {
-        return   Math.sqrt( Math.pow(node2.getPosX()-node1.getPosX(), 2) + Math.pow(node2.getPosY()-node1.getPosY(), 2) );
     }
 
 
@@ -107,4 +108,28 @@ public class Loader {
     public void print(){
         System.out.println( this.toString() );
     }
+
+    public TSProblem getProblem() {
+        switch (PROBLEM_TYPE){
+            case "TSP":{
+                IDistanceMeter distanceMeter;
+                switch (EDGE_WEIGHT_TYPE){
+                    case "GEO":
+                        distanceMeter = new RadialDistanceMeter(6378);
+                        break;
+                    default:
+                        distanceMeter = new Euclides2dDistanceMeter();
+                }
+                double[][] distanceMatrix = createDistanceMatrix(distanceMeter);
+                IFitness<Integer> fitnesCounter = new TravelFitness(distanceMatrix);
+                TSProblem res = new TSProblem(PROBLEM_NAME, PROBLEM_TYPE, PROBLEM_COMMENT, DIMENSION, EDGE_WEIGHT_TYPE, distanceMatrix);
+                res.setFitnessCounter(fitnesCounter);
+                return res;
+            }
+            default:
+            return null;
+        }
+    }
+
+
 }

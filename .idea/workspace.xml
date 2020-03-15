@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fitness/TravelFitnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithm/TSAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loader/Euclides2dDistanceMeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loader/IDistanceMeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loader/RadialDistanceMeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ali535.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/ali535.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fl417.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/fl417.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gr666.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/gr666.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fitness/IFitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fitness/IFitness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/individual/Genome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/individual/Genome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fitness/TravelFitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fitness/TravelFitness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geneticOperators/selection/ISelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/selection/ISelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/individual/Genome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/individual/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/individual/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loader/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problem/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem/TSPProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/TSPProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem/TSPProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/TSProblem.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,136 +38,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#183#184#0" expanded="true" />
-                    <element signature="e#232#233#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/fitness/EuclidesFitness.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/fitness/TravelFitnes.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/fitness/IFitness.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/problem/Problem.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1057#1058#0" expanded="true" />
-                    <element signature="e#1094#1095#0" expanded="true" />
-                    <element signature="e#1156#1157#0" expanded="true" />
-                    <element signature="e#1208#1209#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/problem/TSPProblem.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="438">
-                  <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/algorithm/Algorithm.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/loader/Loader.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/individual/Genome.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#436#437#0" expanded="true" />
-                    <element signature="e#462#463#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/individual/Individual.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#133#134#0" expanded="true" />
-                    <element signature="e#172#173#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -163,99 +50,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/Individual.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/IFitness.java" />
-        <option value="$PROJECT_DIR$/src/loader/Node.java" />
-        <option value="$PROJECT_DIR$/src/crossover/ICrossover.java" />
-        <option value="$PROJECT_DIR$/src/geneticOperators/mutation/IMutation.java" />
-        <option value="$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java" />
-        <option value="$PROJECT_DIR$/src/individual/Individual.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/fitness/IFitness.java" />
-        <option value="$PROJECT_DIR$/src/fitness/TravelFitnes.java" />
-        <option value="$PROJECT_DIR$/src/problem/Problem.java" />
-        <option value="$PROJECT_DIR$/src/individual/Genome.java" />
-        <option value="$PROJECT_DIR$/src/problem/TSPProblem.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
-  </component>
   <component name="ProjectId" id="1Yhu7dJtqxT5pGCYk84ehKkqTcw" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fitness" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geneticOperators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="individual" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SI_GA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SI_GA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="problem" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -277,19 +75,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -321,299 +108,116 @@
       <workItem from="1584013718193" duration="8085000" />
       <workItem from="1584041126323" duration="16000" />
       <workItem from="1584046335177" duration="2600000" />
+      <workItem from="1584101276625" duration="4642000" />
+      <workItem from="1584119483132" duration="658000" />
+      <workItem from="1584120159749" duration="5176000" />
+      <workItem from="1584175602488" duration="32853000" />
     </task>
+    <task id="LOCAL-00001" summary="Fittnes count corrections">
+      <created>1584118322727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584118322727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11470000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Learn" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fittnes count corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fittnes count corrections" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1248" y="271" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1583436240128">
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584273974518">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1248" y="271" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1583436240128" />
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584273974518" />
+    <state x="783" y="444" width="344" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584105836355">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="783" y="444" width="344" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584105836355" />
+    <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584176014388">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584176014388" />
+    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584279463882">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="95" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279463882" />
     <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583410568258">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1583410568258" />
-    <state width="1874" height="344" key="GridCell.Tab.0.bottom" timestamp="1583437269482">
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom" timestamp="1584271531146">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269482" />
-    <state width="1874" height="344" key="GridCell.Tab.0.center" timestamp="1583437269481">
+    <state width="1872" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584271531146" />
+    <state width="1872" height="277" key="GridCell.Tab.0.center" timestamp="1584271531145">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269481" />
-    <state width="1874" height="344" key="GridCell.Tab.0.left" timestamp="1583437269481">
+    <state width="1872" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584271531145" />
+    <state width="1872" height="277" key="GridCell.Tab.0.left" timestamp="1584271531145">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269481" />
-    <state width="1874" height="344" key="GridCell.Tab.0.right" timestamp="1583437269481">
+    <state width="1872" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584271531145" />
+    <state width="1872" height="277" key="GridCell.Tab.0.right" timestamp="1584271531145">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269481" />
-    <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1583437269483">
+    <state width="1872" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584271531145" />
+    <state width="1872" height="484" key="GridCell.Tab.1.bottom" timestamp="1584270501861">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269483" />
-    <state width="1874" height="344" key="GridCell.Tab.1.center" timestamp="1583437269482">
+    <state width="1872" height="484" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584270501861" />
+    <state width="1872" height="484" key="GridCell.Tab.1.center" timestamp="1584270501861">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269482" />
-    <state width="1874" height="344" key="GridCell.Tab.1.left" timestamp="1583437269482">
+    <state width="1872" height="484" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584270501861" />
+    <state width="1872" height="484" key="GridCell.Tab.1.left" timestamp="1584270501861">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269482" />
-    <state width="1874" height="344" key="GridCell.Tab.1.right" timestamp="1583437269482">
+    <state width="1872" height="484" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584270501861" />
+    <state width="1872" height="484" key="GridCell.Tab.1.right" timestamp="1584270501861">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583437269482" />
+    <state width="1872" height="484" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584270501861" />
     <state x="805" y="234" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1583410611948">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="805" y="234" width="819" height="691" key="NewModule_or_Project.wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1583410611948" />
+    <state x="449" y="187" key="SettingsEditor" timestamp="1584119517993">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1584119517993" />
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584175603181">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584175603181" />
     <state x="613" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583431848641">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="613" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1583431848641" />
+    <state x="675" y="472" width="559" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584279320978">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="675" y="472" width="559" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279320978" />
+    <state x="599" y="257" width="719" height="678" key="search.everywhere.popup" timestamp="1584274455756">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="599" y="257" width="719" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1584274455756" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selection/Loader.java" />
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/selection/ISelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/crossover/ICrossover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/mutation/InversionMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/crossover/PMXCrossover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fitness/RadialFitness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/a.java" />
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/selection/RuletteSelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/mutation/IMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geneticOperators/mutation/SwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fitness/EuclidesFitness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fitness/IFitness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fitness/TravelFitnes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem/Problem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/individual/Genome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/individual/Individual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem/TSPProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fitness/TravelFitness.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

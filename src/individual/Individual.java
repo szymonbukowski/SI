@@ -1,23 +1,25 @@
 package individual;
 
-public class Individual<T> {
+import java.util.ArrayList;
 
-    private Genome<T> genome;
+public class Individual<T> implements Comparable<Individual>{
+
+    private ArrayList<T> genome;
     private double fitness;
 
     public Individual(){
-        genome = new Genome<>();
+        genome = new ArrayList<>();
     }
 
-    public Individual(Genome<T> genome) {
+    public Individual(ArrayList<T> genome) {
         this.genome = genome;
     }
 
-    public Genome<T> getGenome() {
+    public ArrayList<T> getGenome() {
         return genome;
     }
 
-    public void setGenome(Genome<T> genome) {
+    public void setGenome(ArrayList<T> genome) {
         this.genome = genome;
     }
 
@@ -30,11 +32,19 @@ public class Individual<T> {
     }
 
     @Override
+    public int compareTo(Individual o) {
+        return (int)(o.getFitness() - fitness);
+    }
+
+    @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
         res.append("Individual: ");
         res.append("\n").append("fittnes: ").append(fitness);
-        res.append("\n").append(genome);
+        res.append("\n").append("genome: ");
+        for(T t: genome){
+            res.append(t).append('-');
+        }
 
         return res.toString();
     }

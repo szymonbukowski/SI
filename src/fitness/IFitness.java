@@ -4,5 +4,5 @@ import individual.Individual;
 
 public interface IFitness<T> {
 
-    double countFitness(Individual<T> individual);
+    double evaluate(Individual<T> individual);
 }

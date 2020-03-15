@@ -21,14 +21,17 @@ public class TravelFitness implements IFitness<Integer>{
     }
 
     @Override
-    public double countFitness(Individual<Integer> individual) {
-        ArrayList<Integer> genes = individual.getGenome().getGenes();
+    public double evaluate(Individual<Integer> individual) {
+        ArrayList<Integer> genes = individual.getGenome();
         double res = 0.0;
 
-        for(int ii=0; ii<genes.size(); ii++){
-            res+= distanceMatrix[ii][ii+1];
+        for(int ii=1; ii<genes.size(); ii++){
+            int from = genes.get(ii-1);
+            int to = genes.get(ii);
+            res += distanceMatrix[from][to];
         }
-        res += distanceMatrix[genes.size()-1][0];
+
+        res += distanceMatrix[genes.get(genes.size()-1)][genes.get(0)];
         individual.setFitness(res);
         return res;
     }
