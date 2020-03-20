@@ -30,8 +30,18 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
         super(problem);
     }
 
-
-
+    public EvolutionaryAlgorithm(TSProblem problem, int generationsNumber, int populationSize, IFitness fitness, ISelection selection, ICrossover crossover, IMutation mutation, Random rd, double px, double pm) {
+        super(problem);
+        this.generationsNumber = generationsNumber;
+        this.populationSize = populationSize;
+        this.fitness = fitness;
+        this.selection = selection;
+        this.crossover = crossover;
+        this.mutation = mutation;
+        this.rd = rd;
+        Px = px;
+        Pm = pm;
+    }
 
     @Override
     public Individual<Integer> findSolution() {
@@ -50,7 +60,7 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
                 if(rd.nextGaussian() < Px){
                     o1 = crossover.crossover(p1, p2);
                 }else{
-                    o1 = p1;
+                    o1 = new Individual(p1);
                 }
                 if(rd.nextGaussian() < Pm){
                     mutation.mutate(o1);
@@ -60,8 +70,8 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
                     bestIndividual = o1;
                 }
             }
+            population = nextPopulation;
         }
-
 
         return bestIndividual;
     }
@@ -85,4 +95,83 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
         return population;
     }
 
+    public int getGenerationsNumber() {
+        return generationsNumber;
+    }
+
+    public void setGenerationsNumber(int generationsNumber) {
+        this.generationsNumber = generationsNumber;
+    }
+
+    public int getPopulationSize() {
+        return populationSize;
+    }
+
+    public void setPopulationSize(int populationSize) {
+        this.populationSize = populationSize;
+    }
+
+    public IFitness getFitness() {
+        return fitness;
+    }
+
+    public void setFitness(IFitness fitness) {
+        this.fitness = fitness;
+    }
+
+    public ISelection getSelection() {
+        return selection;
+    }
+
+    public void setSelection(ISelection selection) {
+        this.selection = selection;
+    }
+
+    public ICrossover getCrossover() {
+        return crossover;
+    }
+
+    public void setCrossover(ICrossover crossover) {
+        this.crossover = crossover;
+    }
+
+    public IMutation getMutation() {
+        return mutation;
+    }
+
+    public void setMutation(IMutation mutation) {
+        this.mutation = mutation;
+    }
+
+    public Random getRd() {
+        return rd;
+    }
+
+    public void setRd(Random rd) {
+        this.rd = rd;
+    }
+
+    public double getPx() {
+        return Px;
+    }
+
+    public void setPx(double px) {
+        Px = px;
+    }
+
+    public double getPm() {
+        return Pm;
+    }
+
+    public void setPm(double pm) {
+        Pm = pm;
+    }
+
+    public Individual getBestIndividual() {
+        return bestIndividual;
+    }
+
+    public void setBestIndividual(Individual bestIndividual) {
+        this.bestIndividual = bestIndividual;
+    }
 }

@@ -15,6 +15,11 @@ public class Individual<T> implements Comparable<Individual>{
         this.genome = genome;
     }
 
+    public Individual(Individual<T> other){
+        this.genome = new ArrayList<>(other.genome);
+        this.fitness = other.fitness;
+    }
+
     public ArrayList<T> getGenome() {
         return genome;
     }
