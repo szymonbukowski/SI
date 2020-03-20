@@ -121,7 +121,7 @@ public class Loader {
                 }
                 double[][] distanceMatrix = createDistanceMatrix(distanceMeter);
                 IFitness fitnesCounter = new TravelFitness(distanceMatrix);
-                TSProblem res = new TSProblem(PROBLEM_NAME, PROBLEM_TYPE, PROBLEM_COMMENT, DIMENSION, EDGE_WEIGHT_TYPE, distanceMatrix);
+                TSProblem res = new TSProblem(PROBLEM_NAME, PROBLEM_TYPE, PROBLEM_COMMENT, DIMENSION, EDGE_WEIGHT_TYPE, TSNodes, distanceMatrix);
                 res.setFitnessCounter(fitnesCounter);
                 return res;
             }
