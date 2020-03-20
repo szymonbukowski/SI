@@ -35,6 +35,7 @@ public class OXCrossover implements ICrossover{
             crossEnd = temp;
         }
     }
+
     private ArrayList<Integer> getChildGenom(ArrayList<Integer> lhs_gen, ArrayList<Integer> rhs_gen, int cxbegin, int cxend){
         ArrayList<Integer> subgenom = new ArrayList<>(lhs_gen.subList(cxbegin, cxend));
         rhs_gen.removeAll(subgenom);

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="">
+    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geneticOperators/crossover/OXCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/crossover/OXCrossover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/selection/TournamentSelection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -90,7 +90,7 @@
       <workItem from="1584119483132" duration="658000" />
       <workItem from="1584120159749" duration="5176000" />
       <workItem from="1584175602488" duration="33284000" />
-      <workItem from="1584645191633" duration="19774000" />
+      <workItem from="1584645191633" duration="25195000" />
     </task>
     <task id="LOCAL-00001" summary="Fittnes count corrections">
       <created>1584118322727</created>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584710276348</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="TournamentSelection constructor added">
+      <created>1584710738432</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1584710738432</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,13 +251,14 @@
     <MESSAGE value="git ignore out and idea" />
     <MESSAGE value="OXCrossover implementation" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="TournamentSelection constructor added" />
+    <option name="LAST_COMMIT_MESSAGE" value="TournamentSelection constructor added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584710563051">
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584710844373">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584710563051" />
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584710844373" />
     <state x="783" y="444" width="344" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584105836355">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -263,10 +271,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584176014388" />
-    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584710659025">
+    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584710766913">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584710659025" />
+    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584710766913" />
     <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583410568258">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -307,10 +315,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="805" y="234" width="819" height="691" key="NewModule_or_Project.wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1583410611948" />
-    <state x="449" y="187" key="SettingsEditor" timestamp="1584119517993">
+    <state x="449" y="187" key="SettingsEditor" timestamp="1584714750314">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1584119517993" />
+    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1584714750314" />
     <state x="798" y="467" width="304" height="169" key="VCS.ChangelistChooser" timestamp="1584702899488">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
