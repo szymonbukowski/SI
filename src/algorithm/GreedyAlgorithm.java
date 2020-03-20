@@ -68,9 +68,9 @@ public class GreedyAlgorithm extends TSAlgorithm {
         this.startPoint = startPoint;
     }
 
-    public Individual<Integer> fullSearch(){
+    public Individual fullSearch(){
         IFitness fit = getProblem().getFitnessCounter();
-        Individual<Integer> bestSolution = getProblem().getIndividual();
+        Individual bestSolution = getProblem().getIndividual();
         fit.evaluate(bestSolution);
 
         ArrayList<Integer> notTested = new ArrayList<>();
@@ -79,7 +79,7 @@ public class GreedyAlgorithm extends TSAlgorithm {
         }
         for(Integer i: notTested){
             setStartPoint(i);
-            Individual<Integer> res = findSolution();
+            Individual res = findSolution();
             if(bestSolution.getFitness() > fit.evaluate(res)){
                 bestSolution = res;
             }
@@ -88,7 +88,7 @@ public class GreedyAlgorithm extends TSAlgorithm {
     }
 
     @Override
-    public Individual<Integer> findSolution() {
+    public Individual findSolution() {
         initNotVisited();
         double[][] distances = getProblem().getDistanceMatrix();
         ArrayList<Integer> genome = new ArrayList<>();
@@ -113,6 +113,6 @@ public class GreedyAlgorithm extends TSAlgorithm {
             visit(nextStop, notVisited, genome);
             actual = nextStop;
         }
-        return new Individual<>(genome);
+        return new Individual(genome);
     }
 }

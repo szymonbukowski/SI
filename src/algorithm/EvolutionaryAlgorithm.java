@@ -44,7 +44,7 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
     }
 
     @Override
-    public Individual<Integer> findSolution() {
+    public Individual findSolution() {
 
         ArrayList<Individual> population = getPopulation(populationSize);
         evaluate(population);

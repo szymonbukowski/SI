@@ -4,7 +4,7 @@ import individual.Individual;
 
 import java.util.ArrayList;
 
-public class TravelFitness implements IFitness<Integer>{
+public class TravelFitness implements IFitness{
 
     private double[][] distanceMatrix;
 
@@ -21,7 +21,7 @@ public class TravelFitness implements IFitness<Integer>{
     }
 
     @Override
-    public double evaluate(Individual<Integer> individual) {
+    public double evaluate(Individual individual) {
         ArrayList<Integer> genes = individual.getGenome();
         double res = 0.0;
 

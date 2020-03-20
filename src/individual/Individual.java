@@ -2,29 +2,29 @@ package individual;
 
 import java.util.ArrayList;
 
-public class Individual<T> implements Comparable<Individual>{
+public class Individual implements Comparable<Individual>{
 
-    private ArrayList<T> genome;
+    private ArrayList<Integer> genome;
     private double fitness;
 
     public Individual(){
         genome = new ArrayList<>();
     }
 
-    public Individual(ArrayList<T> genome) {
+    public Individual(ArrayList<Integer> genome) {
         this.genome = genome;
     }
 
-    public Individual(Individual<T> other){
+    public Individual(Individual other){
         this.genome = new ArrayList<>(other.genome);
         this.fitness = other.fitness;
     }
 
-    public ArrayList<T> getGenome() {
+    public ArrayList<Integer> getGenome() {
         return genome;
     }
 
-    public void setGenome(ArrayList<T> genome) {
+    public void setGenome(ArrayList<Integer> genome) {
         this.genome = genome;
     }
 
@@ -47,8 +47,8 @@ public class Individual<T> implements Comparable<Individual>{
         res.append("Individual: ");
         res.append("\n").append("fittnes: ").append(fitness);
         res.append("\n").append("genome: ");
-        for(T t: genome){
-            res.append(t).append('-');
+        for(Integer i: genome){
+            res.append(i).append('-');
         }
 
         return res.toString();

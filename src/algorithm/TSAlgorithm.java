@@ -21,5 +21,5 @@ public abstract class TSAlgorithm{
         this.problem = problem;
     }
 
-    public abstract Individual<Integer> findSolution();
+    public abstract Individual findSolution();
 }

@@ -14,6 +14,7 @@ public class TSProblem extends Problem<Integer>{
 
     private int DIMENSION;
     private String EDGE_WEIGHT_TYPE;
+    private Node
     private double[][] distanceMatrix;
 
     public TSProblem(int DIMENSION, String EDGE_WEIGHT_TYPE, double[][] distanceMatrix) {
@@ -54,13 +55,13 @@ public class TSProblem extends Problem<Integer>{
     }
 
     @Override
-    public Individual<Integer> getIndividual() {
+    public Individual getIndividual() {
         ArrayList<Integer> genome = new ArrayList<>();
         for(int ii=0; ii< DIMENSION; ii++){
             genome.add(ii);
         }
         Collections.shuffle(genome);
-        return new Individual<>(genome);
+        return new Individual(genome);
     }
 
     @Override

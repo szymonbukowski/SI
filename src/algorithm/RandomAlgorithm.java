@@ -24,14 +24,14 @@ public class RandomAlgorithm extends TSAlgorithm{
     }
 
     @Override
-    public Individual<Integer> findSolution() {
+    public Individual findSolution() {
         IFitness<Integer> fit = getProblem().getFitnessCounter();
 
-        Individual<Integer> bestSolution = getProblem().getIndividual();
+        Individual bestSolution = getProblem().getIndividual();
         fit.evaluate(bestSolution);
 
         for(int ii=0; ii<triesNumber; ii++){
-            Individual<Integer> competitor = getProblem().getIndividual();
+            Individual competitor = getProblem().getIndividual();
             if( bestSolution.getFitness() > fit.evaluate(competitor)){
                 bestSolution = competitor;
             }

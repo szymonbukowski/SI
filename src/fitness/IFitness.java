@@ -2,7 +2,7 @@ package fitness;
 
 import individual.Individual;
 
-public interface IFitness<T> {
+public interface IFitness{
 
-    double evaluate(Individual<T> individual);
+    double evaluate(Individual individual);
 }
