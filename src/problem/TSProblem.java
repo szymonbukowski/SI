@@ -1,32 +1,31 @@
 package problem;
 
 import individual.Individual;
+import loader.TSNode;
 
-import java.text.Format;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Dictionary;
-import java.util.logging.Formatter;
 
 
 public class TSProblem extends Problem<Integer>{
 
     private int DIMENSION;
     private String EDGE_WEIGHT_TYPE;
-    private Node
+    ArrayList<TSNode> tsNodes;
     private double[][] distanceMatrix;
 
-    public TSProblem(int DIMENSION, String EDGE_WEIGHT_TYPE, double[][] distanceMatrix) {
+    public TSProblem(int DIMENSION, String EDGE_WEIGHT_TYPE, ArrayList<TSNode> tsNodes, double[][] distanceMatrix) {
         this.DIMENSION = DIMENSION;
         this.EDGE_WEIGHT_TYPE = EDGE_WEIGHT_TYPE;
+        this.tsNodes = tsNodes;
         this.distanceMatrix = distanceMatrix;
     }
 
-    public TSProblem(String PROBLEM_NAME, String PROBLEM_TYPE, String PROBLEM_COMMENT, int DIMENSION, String EDGE_WEIGHT_TYPE, double[][] distanceMatrix) {
+    public TSProblem(String PROBLEM_NAME, String PROBLEM_TYPE, String PROBLEM_COMMENT, int DIMENSION, String EDGE_WEIGHT_TYPE, ArrayList<TSNode> tsNodes, double[][] distanceMatrix) {
         super(PROBLEM_NAME, PROBLEM_TYPE, PROBLEM_COMMENT);
         this.DIMENSION = DIMENSION;
         this.EDGE_WEIGHT_TYPE = EDGE_WEIGHT_TYPE;
+        this.tsNodes = tsNodes;
         this.distanceMatrix = distanceMatrix;
     }
 
