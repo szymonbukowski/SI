@@ -11,6 +11,11 @@ public class TournamentSelection implements ISelection {
     int tournamentSize;
     Random rd;
 
+    public TournamentSelection(int tournamentSize) {
+        this.tournamentSize = tournamentSize;
+        rd = new Random();
+    }
+
     @Override
     public Individual select(ArrayList<Individual> population) {
         ArrayList<Individual> tournament = new ArrayList<>();
