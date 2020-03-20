@@ -1,16 +1,16 @@
 package loader;
 
-public class Node {
+public class TSNode {
 
     private int ID;
     private double posX;
     private double posY;
 
-    public Node(){
+    public TSNode(){
 
     }
 
-    public Node(int ID, double posX, double posY) {
+    public TSNode(int ID, double posX, double posY) {
         this.ID = ID;
         this.posX = posX;
         this.posY = posY;

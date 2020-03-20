@@ -2,5 +2,5 @@ package loader;
 
 public interface IDistanceMeter {
 
-    double getDistance(Node lhs, Node rhs);
+    double getDistance(TSNode lhs, TSNode rhs);
 }

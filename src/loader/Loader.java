@@ -2,7 +2,6 @@ package loader;
 
 import fitness.IFitness;
 import fitness.TravelFitness;
-import problem.Problem;
 import problem.TSProblem;
 
 import java.io.BufferedReader;
@@ -18,12 +17,12 @@ public class Loader {
     String PROBLEM_COMMENT;
     int DIMENSION;
     String EDGE_WEIGHT_TYPE;
-    ArrayList<Node> nodes;
+    ArrayList<TSNode> TSNodes;
 
     private BufferedReader br;
 
     public Loader(){
-        nodes = new ArrayList<>();
+        TSNodes = new ArrayList<>();
     }
 
 
@@ -49,7 +48,7 @@ public class Loader {
 
             br.readLine();
             for(int i = 0; i < DIMENSION; i++) {
-                nodes.add(readNode());
+                TSNodes.add(readNode());
             }
 
         }catch (IOException e){
@@ -66,10 +65,10 @@ public class Loader {
         return br.readLine().split(":")[1].replace(" ", "");
     }
 
-    private Node readNode() throws IOException {
+    private TSNode readNode() throws IOException {
         String[] nodeInfo = br.readLine().split(" ");
 
-        return new Node(Integer.parseInt(nodeInfo[0]),
+        return new TSNode(Integer.parseInt(nodeInfo[0]),
                         Double.parseDouble(nodeInfo[1]),
                         Double.parseDouble(nodeInfo[2]));
     }
@@ -81,7 +80,7 @@ public class Loader {
                 if (i == j)
                     matrix[i][j] = 0.0;
                 else
-                    matrix[i][j] = distanceMeter.getDistance(nodes.get(i), nodes.get(j));
+                    matrix[i][j] = distanceMeter.getDistance(TSNodes.get(i), TSNodes.get(j));
             }
         }
 
@@ -99,7 +98,7 @@ public class Loader {
         result.append("DIMENSION: ").append(DIMENSION).append('\n');
         result.append("EDGE_WEIGHT_TYPE: ").append(EDGE_WEIGHT_TYPE).append('\n');
         result.append("nodes:").append('\n');
-        for(Node n: nodes){
+        for(TSNode n: TSNodes){
             result.append(n.toString());
             result.append('\n');
         }
@@ -121,7 +120,7 @@ public class Loader {
                         distanceMeter = new Euclides2dDistanceMeter();
                 }
                 double[][] distanceMatrix = createDistanceMatrix(distanceMeter);
-                IFitness<Integer> fitnesCounter = new TravelFitness(distanceMatrix);
+                IFitness fitnesCounter = new TravelFitness(distanceMatrix);
                 TSProblem res = new TSProblem(PROBLEM_NAME, PROBLEM_TYPE, PROBLEM_COMMENT, DIMENSION, EDGE_WEIGHT_TYPE, distanceMatrix);
                 res.setFitnessCounter(fitnesCounter);
                 return res;

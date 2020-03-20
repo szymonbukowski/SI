@@ -17,7 +17,7 @@ public class RadialDistanceMeter implements IDistanceMeter {
     }
 
     @Override
-    public double getDistance(Node lhs, Node rhs) {
+    public double getDistance(TSNode lhs, TSNode rhs) {
 
         double lhs_lat = Math.toRadians(lhs.getPosX());
         double rhs_lat = Math.toRadians(rhs.getPosX());
