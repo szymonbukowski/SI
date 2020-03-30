@@ -9,7 +9,7 @@ public abstract class Problem<T> {
     private String PROBLEM_TYPE;
     private String PROBLEM_COMMENT;
 
-    private IFitness<T> fitnessCounter;
+    private IFitness fitnessCounter;
 
     public Problem(){
 
@@ -21,7 +21,7 @@ public abstract class Problem<T> {
         this.PROBLEM_COMMENT = PROBLEM_COMMENT;
     }
 
-    public abstract Individual<T> getIndividual();
+    public abstract Individual getIndividual();
 
     public String getPROBLEM_NAME() {
         return PROBLEM_NAME;
@@ -47,7 +47,7 @@ public abstract class Problem<T> {
         this.PROBLEM_COMMENT = PROBLEM_COMMENT;
     }
 
-    public IFitness<T> getFitnessCounter() {
+    public IFitness getFitnessCounter() {
         return fitnessCounter;
     }
 

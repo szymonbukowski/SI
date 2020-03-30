@@ -38,19 +38,27 @@ public class Individual implements Comparable<Individual>{
 
     @Override
     public int compareTo(Individual o) {
-        return (int)(o.getFitness() - fitness);
+        return (int)(fitness - o.fitness);
     }
 
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append("Individual: ");
+        res.append("Individual: ").append('\n');
+        res.append("dimention: ").append(genome.size()).append('\n');
         res.append("\n").append("fittnes: ").append(fitness);
         res.append("\n").append("genome: ");
-        for(Integer i: genome){
-            res.append(i).append('-');
-        }
+        res.append(getRoute()).append('\n');
 
         return res.toString();
     }
+    public String getRoute(){
+        StringBuilder res = new StringBuilder();
+        for(Integer i: genome){
+            res.append(i).append('-');
+        }
+        res.deleteCharAt(res.length());
+        return res.toString();
+    }
+
 }

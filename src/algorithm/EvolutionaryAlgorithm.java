@@ -8,8 +8,9 @@ import individual.Individual;
 import problem.Problem;
 import problem.TSProblem;
 
+import java.io.File;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
 public class EvolutionaryAlgorithm extends TSAlgorithm{
@@ -24,21 +25,26 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
     private Random rd;
     private double Px;
     private double Pm;
+
     private Individual bestIndividual;
+    private double averageIndividualFitness;
+    private double worstIndividualFitness;
+
+    File output;
 
     public EvolutionaryAlgorithm(TSProblem problem) {
         super(problem);
     }
 
-    public EvolutionaryAlgorithm(TSProblem problem, int generationsNumber, int populationSize, IFitness fitness, ISelection selection, ICrossover crossover, IMutation mutation, Random rd, double px, double pm) {
+    public EvolutionaryAlgorithm(TSProblem problem, int generationsNumber, int populationSize, ISelection selection, ICrossover crossover, IMutation mutation, double px, double pm) {
         super(problem);
         this.generationsNumber = generationsNumber;
         this.populationSize = populationSize;
-        this.fitness = fitness;
+        this.fitness = problem.getFitnessCounter();
         this.selection = selection;
         this.crossover = crossover;
         this.mutation = mutation;
-        this.rd = rd;
+        this.rd = new Random();
         Px = px;
         Pm = pm;
     }
@@ -47,8 +53,9 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
     public Individual findSolution() {
 
         ArrayList<Individual> population = getPopulation(populationSize);
-        evaluate(population);
         bestIndividual = population.get(0);
+        fitness.evaluate(bestIndividual);
+        evaluate(population);
 
         ArrayList<Individual> nextPopulation = new ArrayList<>();
         for(int ii=0; ii<generationsNumber; ii++){
@@ -66,9 +73,10 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
                     mutation.mutate(o1);
                 }
                 fitness.evaluate(o1);
-                if(bestIndividual.compareTo(o1) < 0){
+                if(bestIndividual.compareTo(o1) > 0){
                     bestIndividual = o1;
                 }
+                nextPopulation.add(o1);
             }
             population = nextPopulation;
         }
@@ -88,13 +96,28 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
 
     private ArrayList<Individual> evaluate(ArrayList<Individual> population){
         IFitness fitness =getProblem().getFitnessCounter();
+        averageIndividualFitness = 0.0;
         for (Individual i: population) {
             fitness.evaluate(i);
+            if(bestIndividual.getFitness() > i.getFitness()){
+                bestIndividual = i;
+            }
+            if(worstIndividualFitness < i.getFitness()){
+                worstIndividualFitness = i.getFitness();
+            }
+            averageIndividualFitness += i.getFitness();
         }
-        Collections.sort(population);
         return population;
     }
+    public boolean initFile(){
+        String filename = getProblem().getPROBLEM_NAME() + "_" + LocalDateTime.now().getHour() + ":" + LocalDateTime.now().getMinute();
+        output = new File("logs/" + filename + ".csv");
+        return true;
 
+    }
+    public void saveToFile(){
+
+    }
     public int getGenerationsNumber() {
         return generationsNumber;
     }
@@ -141,14 +164,6 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
 
     public void setMutation(IMutation mutation) {
         this.mutation = mutation;
-    }
-
-    public Random getRd() {
-        return rd;
-    }
-
-    public void setRd(Random rd) {
-        this.rd = rd;
     }
 
     public double getPx() {

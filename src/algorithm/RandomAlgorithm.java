@@ -25,7 +25,7 @@ public class RandomAlgorithm extends TSAlgorithm{
 
     @Override
     public Individual findSolution() {
-        IFitness<Integer> fit = getProblem().getFitnessCounter();
+        IFitness fit = getProblem().getFitnessCounter();
 
         Individual bestSolution = getProblem().getIndividual();
         fit.evaluate(bestSolution);

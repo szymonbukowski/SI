@@ -11,6 +11,10 @@ public class OXCrossover implements ICrossover{
     private int crossBeginning;
     private int crossEnd;
 
+    public OXCrossover() {
+        this.rd = new Random();
+    }
+
     @Override
     public Individual crossover(Individual lhs, Individual rhs) {
         ArrayList<Integer> lhs_gen = new ArrayList<>(lhs.getGenome());

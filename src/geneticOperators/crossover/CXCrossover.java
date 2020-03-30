@@ -11,10 +11,8 @@ public class CXCrossover implements ICrossover {
 
         ArrayList<Integer> lhs_gen = lhs.getGenome();
         ArrayList<Integer> rhs_gen = rhs.getGenome();
-        System.out.println("before - " + rhs_gen.size());
         int size = lhs.getGenome().size();
         ArrayList<Integer> cycleIndexes = findCycle(lhs_gen, rhs_gen, 0);
-        System.out.println("after - " + rhs_gen.size());
         ArrayList<Integer> genome = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             if(cycleIndexes.contains(i)){
@@ -43,7 +41,7 @@ public class CXCrossover implements ICrossover {
             cycleIndexes.add(actIndex);
             actVal = rhs_gen.get(actIndex);
 
-            if(startValue == actIndex){
+            if(startValue == actVal){
                 isCycleClosed = true;
             }
         }
