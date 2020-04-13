@@ -46,7 +46,7 @@ public class Individual implements Comparable<Individual>{
         StringBuilder res = new StringBuilder();
         res.append("Individual: ").append('\n');
         res.append("dimention: ").append(genome.size()).append('\n');
-        res.append("\n").append("fittnes: ").append(fitness);
+        res.append("fittnes: ").append(fitness);
         res.append("\n").append("genome: ");
         res.append(getRoute()).append('\n');
 
@@ -57,7 +57,7 @@ public class Individual implements Comparable<Individual>{
         for(Integer i: genome){
             res.append(i).append('-');
         }
-        res.deleteCharAt(res.length());
+        res.deleteCharAt(res.length()-1);
         return res.toString();
     }
 

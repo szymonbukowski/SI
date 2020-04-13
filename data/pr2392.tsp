@@ -1,6 +1,6 @@
 NAME: pr2392
-COMMENT: 2392-city problem (Padberg/Rinaldi)
 TYPE: TSP
+COMMENT: 2392-city problem (Padberg/Rinaldi)
 DIMENSION: 2392
 EDGE_WEIGHT_TYPE: EUC_2D
 NODE_COORD_SECTION

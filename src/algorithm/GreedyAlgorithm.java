@@ -4,6 +4,10 @@ import fitness.IFitness;
 import individual.Individual;
 import problem.TSProblem;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -13,6 +17,10 @@ public class GreedyAlgorithm extends TSAlgorithm {
     ArrayList<Integer> notVisited;
     Random rd;
     Integer startPoint;
+
+
+    File outputFile;
+    FileWriter fileWriter;
 
     public GreedyAlgorithm(TSProblem problem){
         super(problem);
@@ -69,6 +77,7 @@ public class GreedyAlgorithm extends TSAlgorithm {
     }
 
     public Individual fullSearch(){
+        initFile();
         IFitness fit = getProblem().getFitnessCounter();
         Individual bestSolution = getProblem().getIndividual();
         fit.evaluate(bestSolution);
@@ -80,7 +89,9 @@ public class GreedyAlgorithm extends TSAlgorithm {
         for(Integer i: notTested){
             setStartPoint(i);
             Individual res = findSolution();
-            if(bestSolution.getFitness() > fit.evaluate(res)){
+            double fitness = fit.evaluate(res);
+            saveResult(i, fitness);
+            if(bestSolution.getFitness() > fitness){
                 bestSolution = res;
             }
         }
@@ -89,6 +100,7 @@ public class GreedyAlgorithm extends TSAlgorithm {
 
     @Override
     public Individual findSolution() {
+
         initNotVisited();
         double[][] distances = getProblem().getDistanceMatrix();
         ArrayList<Integer> genome = new ArrayList<>();
@@ -114,5 +126,32 @@ public class GreedyAlgorithm extends TSAlgorithm {
             actual = nextStop;
         }
         return new Individual(genome);
+    }
+    private boolean initFile(){
+        LocalDateTime now = LocalDateTime.now();
+        String filename = String.valueOf(now.getHour()) + String.valueOf(now.getMinute()) + String.valueOf(now.getSecond()) + "_"
+                + getProblem().getPROBLEM_NAME() + "Greedy"  + "_runs" + getProblem().getDIMENSION();
+        outputFile = new File("logs/" + filename + ".csv");
+        try {
+            fileWriter = new FileWriter(outputFile);
+            fileWriter.write("try;solution\n");
+            fileWriter.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("BLAD odczytu pliku");
+            return false;
+        }
+        return true;
+    }
+    private void saveResult(int id, double solution){
+        try {
+
+            fileWriter.write(String.valueOf(id) + ';');
+            fileWriter.write(String.valueOf(solution) + ";\n");
+
+            fileWriter.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

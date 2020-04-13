@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="gitignore">
+    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="commit aktualnej wersji">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geneticOperators/crossover/OXCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geneticOperators/crossover/OXCrossover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nrw1379.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/nrw1379.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pr2392.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/pr2392.tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/individual/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/individual/Individual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -34,7 +41,6 @@
   <component name="ProjectId" id="1Yhu7dJtqxT5pGCYk84ehKkqTcw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -90,7 +96,24 @@
       <workItem from="1584119483132" duration="658000" />
       <workItem from="1584120159749" duration="5176000" />
       <workItem from="1584175602488" duration="33284000" />
-      <workItem from="1584645191633" duration="25195000" />
+      <workItem from="1584645191633" duration="39668000" />
+      <workItem from="1584905792256" duration="416000" />
+      <workItem from="1584966465835" duration="1460000" />
+      <workItem from="1585175874596" duration="72000" />
+      <workItem from="1585310985333" duration="8738000" />
+      <workItem from="1585588000621" duration="84000" />
+      <workItem from="1585590491367" duration="2571000" />
+      <workItem from="1585595216579" duration="255000" />
+      <workItem from="1585648442118" duration="151000" />
+      <workItem from="1585840464762" duration="2410000" />
+      <workItem from="1585847347370" duration="5365000" />
+      <workItem from="1585864063846" duration="599000" />
+      <workItem from="1586102378872" duration="615000" />
+      <workItem from="1586110533978" duration="414000" />
+      <workItem from="1586269136484" duration="1579000" />
+      <workItem from="1586285811949" duration="5498000" />
+      <workItem from="1586298671793" duration="4542000" />
+      <workItem from="1586437369286" duration="38672000" />
     </task>
     <task id="LOCAL-00001" summary="Fittnes count corrections">
       <created>1584118322727</created>
@@ -218,11 +241,25 @@
       <option name="project" value="LOCAL" />
       <updated>1584710738432</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="cycle crossover added">
+      <created>1584716193295</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1584716193295</updated>
+    </task>
+    <task id="LOCAL-00020" summary="commit aktualnej wersji">
+      <created>1585595436045</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585595436045</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -234,6 +271,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fittnes count corrections" />
@@ -252,13 +290,16 @@
     <MESSAGE value="OXCrossover implementation" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="TournamentSelection constructor added" />
-    <option name="LAST_COMMIT_MESSAGE" value="TournamentSelection constructor added" />
+    <MESSAGE value="cycle crossover added" />
+    <MESSAGE value="problem class generic removal" />
+    <MESSAGE value="commit aktualnej wersji" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit aktualnej wersji" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584710844373">
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1584967044147">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584710844373" />
+    <state x="1237" y="271" width="683" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584967044147" />
     <state x="783" y="444" width="344" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584105836355">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -271,46 +312,46 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584176014388" />
-    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1584710766913">
+    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2" timestamp="1585595435838">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584710766913" />
-    <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583410568258">
+    <state x="500" y="98" width="1012" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1585595435838" />
+    <state x="1003" y="338" width="542" height="484" key="FileChooserDialogImpl" timestamp="1586110890839">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1003" y="338" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1583410568258" />
-    <state width="1872" height="484" key="GridCell.Tab.0.bottom" timestamp="1584279753046">
+    <state x="1003" y="338" width="542" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586110890839" />
+    <state width="1872" height="481" key="GridCell.Tab.0.bottom" timestamp="1586623706232">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753046" />
-    <state width="1872" height="484" key="GridCell.Tab.0.center" timestamp="1584279753046">
+    <state width="1872" height="481" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586623706232" />
+    <state width="1872" height="481" key="GridCell.Tab.0.center" timestamp="1586623706231">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753046" />
-    <state width="1872" height="484" key="GridCell.Tab.0.left" timestamp="1584279753046">
+    <state width="1872" height="481" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586623706231" />
+    <state width="1872" height="481" key="GridCell.Tab.0.left" timestamp="1586623706231">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753046" />
-    <state width="1872" height="484" key="GridCell.Tab.0.right" timestamp="1584279753046">
+    <state width="1872" height="481" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586623706231" />
+    <state width="1872" height="481" key="GridCell.Tab.0.right" timestamp="1586623706231">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753046" />
-    <state width="1872" height="484" key="GridCell.Tab.1.bottom" timestamp="1584279753047">
+    <state width="1872" height="481" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586623706231" />
+    <state width="1872" height="484" key="GridCell.Tab.1.bottom" timestamp="1584740805267">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753047" />
-    <state width="1872" height="484" key="GridCell.Tab.1.center" timestamp="1584279753047">
+    <state width="1872" height="484" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584740805267" />
+    <state width="1872" height="484" key="GridCell.Tab.1.center" timestamp="1584740805267">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753047" />
-    <state width="1872" height="484" key="GridCell.Tab.1.left" timestamp="1584279753046">
+    <state width="1872" height="484" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584740805267" />
+    <state width="1872" height="484" key="GridCell.Tab.1.left" timestamp="1584740805267">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753046" />
-    <state width="1872" height="484" key="GridCell.Tab.1.right" timestamp="1584279753047">
+    <state width="1872" height="484" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584740805267" />
+    <state width="1872" height="484" key="GridCell.Tab.1.right" timestamp="1585322882407">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1872" height="484" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584279753047" />
+    <state width="1872" height="484" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585322882407" />
     <state x="805" y="234" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1583410611948">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -323,14 +364,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="798" y="467" width="304" height="169" key="VCS.ChangelistChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1584702899488" />
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1584710282603">
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585595462463">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584710282603" />
-    <state x="616" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584645195393">
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1585595462463" />
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586285830292">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="616" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584645195393" />
+    <state x="616" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586285830292" />
     <state x="613" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583431848641">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -339,10 +380,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="675" y="472" width="559" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279320978" />
-    <state x="11" y="142" width="1887" height="820" key="new project wizard" timestamp="1584646914460">
+    <state x="11" y="142" width="1887" height="820" key="new project wizard" timestamp="1586110943631">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="11" y="142" width="1887" height="820" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1584646914460" />
+    <state x="11" y="142" width="1887" height="820" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1586110943631" />
     <state x="624" y="253" key="run.anything.popup" timestamp="1584695880902">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -351,6 +392,28 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="599" y="257" width="719" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1584274455756" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/geneticOperators/crossover/CXCrossover.java</url>
+          <line>26</line>
+          <properties class="geneticOperators.crossover.CXCrossover" method="findCycle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SI_GA$Main.ic" NAME="Main Coverage Results" MODIFIED="1584724698347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

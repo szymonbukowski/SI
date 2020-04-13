@@ -9,8 +9,11 @@ import problem.Problem;
 import problem.TSProblem;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class EvolutionaryAlgorithm extends TSAlgorithm{
@@ -30,7 +33,8 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
     private double averageIndividualFitness;
     private double worstIndividualFitness;
 
-    File output;
+    File outputFile;
+    FileWriter fileWriter;
 
     public EvolutionaryAlgorithm(TSProblem problem) {
         super(problem);
@@ -52,24 +56,28 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
     @Override
     public Individual findSolution() {
 
+        initFile();
         ArrayList<Individual> population = getPopulation(populationSize);
         bestIndividual = population.get(0);
         fitness.evaluate(bestIndividual);
-        evaluate(population);
 
         ArrayList<Individual> nextPopulation = new ArrayList<>();
         for(int ii=0; ii<generationsNumber; ii++){
+            worstIndividualFitness = 0.0;
+            evaluate(population);
+            averagePopulationFitness(population);
+            saveGeneration(ii);
 
             while(nextPopulation.size()<populationSize){
                 Individual p1 = selection.select(population);
                 Individual p2 = selection.select(population);
                 Individual o1;
-                if(rd.nextGaussian() < Px){
+                if(rd.nextDouble() < Px){
                     o1 = crossover.crossover(p1, p2);
                 }else{
                     o1 = new Individual(p1);
                 }
-                if(rd.nextGaussian() < Pm){
+                if(rd.nextDouble() < Pm){
                     mutation.mutate(o1);
                 }
                 fitness.evaluate(o1);
@@ -78,7 +86,11 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
                 }
                 nextPopulation.add(o1);
             }
+
+            ArrayList<Individual> tempPopulation = population;
             population = nextPopulation;
+            nextPopulation = tempPopulation;
+            nextPopulation.clear();
         }
 
         return bestIndividual;
@@ -105,19 +117,113 @@ public class EvolutionaryAlgorithm extends TSAlgorithm{
             if(worstIndividualFitness < i.getFitness()){
                 worstIndividualFitness = i.getFitness();
             }
-            averageIndividualFitness += i.getFitness();
         }
         return population;
     }
-    public boolean initFile(){
-        String filename = getProblem().getPROBLEM_NAME() + "_" + LocalDateTime.now().getHour() + ":" + LocalDateTime.now().getMinute();
-        output = new File("logs/" + filename + ".csv");
+
+    private double averagePopulationFitness(ArrayList<Individual> population){
+        double avg = 0.0;
+        for (Individual i:population) {
+            avg += i.getFitness();
+        }
+        avg = avg/population.size();
+        averageIndividualFitness = avg;
+        return avg;
+    }
+
+    private ArrayList<Individual> greedyPopulation(){
+        TSProblem problem = getProblem();
+        GreedyAlgorithm algorithm = new GreedyAlgorithm(problem);
+        ArrayList<Individual> population = new ArrayList<>();
+        for(int i=0; i<problem.getDIMENSION(); i++){
+            algorithm.setStartPoint(i);
+            population.add(algorithm.findSolution());
+        }
+        return population;
+    }
+    private ArrayList<Individual> selectFirstPopulation(ArrayList<Individual> generatedPopulation){
+        ArrayList<Individual> population = new ArrayList<>();
+        for(int i=0; i<populationSize; i++){
+            population.add(selection.select(generatedPopulation));
+        }
+        return population;
+    }
+
+    public Individual hybridSolution(){
+        initFile();
+        ArrayList<Individual> population = greedyPopulation();
+        population = selectFirstPopulation(population);
+        bestIndividual = population.get(0);
+        fitness.evaluate(bestIndividual);
+
+        ArrayList<Individual> nextPopulation = new ArrayList<>();
+        for(int ii=0; ii<generationsNumber; ii++){
+            worstIndividualFitness = 0.0;
+            evaluate(population);
+            averagePopulationFitness(population);
+            saveGeneration(ii);
+
+            while(nextPopulation.size()<populationSize){
+                Individual p1 = selection.select(population);
+                Individual p2 = selection.select(population);
+                Individual o1;
+                if(rd.nextDouble() < Px){
+                    o1 = crossover.crossover(p1, p2);
+                }else{
+                    o1 = new Individual(p1);
+                }
+                if(rd.nextDouble() < Pm){
+                    mutation.mutate(o1);
+                }
+                fitness.evaluate(o1);
+                if(bestIndividual.compareTo(o1) > 0){
+                    bestIndividual = o1;
+                }
+                nextPopulation.add(o1);
+            }
+
+            ArrayList<Individual> tempPopulation = population;
+            population = nextPopulation;
+            nextPopulation = tempPopulation;
+            nextPopulation.clear();
+        }
+
+        return bestIndividual;
+
+    }
+
+    private boolean initFile(){
+        LocalDateTime now = LocalDateTime.now();
+        String filename = String.valueOf(now.getHour()) + String.valueOf(now.getMinute()) + String.valueOf(now.getSecond()) + "_"
+                + getProblem().getPROBLEM_NAME() + "GA"  + "_gen" + generationsNumber +"_pop" + populationSize
+                + "_px" + Px + "_pm" + Pm + "_"
+                + selection.getClass().getSimpleName() + "_" + crossover.getClass().getSimpleName() + "_" + mutation.getClass().getSimpleName();
+        outputFile = new File("logs/" + filename + ".csv");
+        try {
+            fileWriter = new FileWriter(outputFile);
+            fileWriter.write("gen;worst;average;best;route\n");
+            fileWriter.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("BLAD odczytu pliku");
+            return false;
+        }
         return true;
-
     }
-    public void saveToFile(){
+    private void saveGeneration(int gen){
+        try {
 
+            fileWriter.write(String.valueOf(gen) + ';');
+            fileWriter.write(String.valueOf(worstIndividualFitness) + ';');
+            fileWriter.write(String.valueOf(averageIndividualFitness) + ';');
+            fileWriter.write(String.valueOf(bestIndividual.getFitness()) + ';');
+            fileWriter.write(String.valueOf(bestIndividual.getRoute()) + '\n');
+            fileWriter.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
     public int getGenerationsNumber() {
         return generationsNumber;
     }
