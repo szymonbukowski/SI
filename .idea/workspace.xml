@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="commit aktualnej wersji">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nrw1379.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/nrw1379.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pr2392.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/data/pr2392.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SI_CW1/algorithm/EvolutionaryAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/EvolutionaryAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/GreedyAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/RandomAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/individual/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/individual/Individual.java" afterDir="false" />
-    </list>
+    <list default="true" id="a9c71622-7abc-4f1b-aa29-c7b5b218afba" name="Default Changelist" comment="commit aktualnej wersji" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +103,7 @@
       <workItem from="1586285811949" duration="5498000" />
       <workItem from="1586298671793" duration="4542000" />
       <workItem from="1586437369286" duration="38672000" />
+      <workItem from="1586774959655" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Fittnes count corrections">
       <created>1584118322727</created>
@@ -380,10 +370,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="675" y="472" width="559" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584279320978" />
-    <state x="11" y="142" width="1887" height="820" key="new project wizard" timestamp="1586110943631">
+    <state x="11" y="142" width="1887" height="820" key="new project wizard" timestamp="1586774989988">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="11" y="142" width="1887" height="820" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1586110943631" />
+    <state x="11" y="142" width="1887" height="820" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1586774989988" />
     <state x="624" y="253" key="run.anything.popup" timestamp="1584695880902">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
